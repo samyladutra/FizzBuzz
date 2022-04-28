@@ -33,15 +33,6 @@ namespace FizzBuzz
             return valores.Distinct().ToList();
         }
 
-        public static bool VerificaDivisibilidade(int valor, int dividendo)
-        {
-            bool isDivisivel = false;
-            if (valor % dividendo == 0)
-                isDivisivel = true;
-
-            return isDivisivel;
-        }
-
         public class DivisibilidadePor3 : IDivisibilidade
         {
             public string VerificaDivisibilidade(int valor)
